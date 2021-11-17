@@ -77,7 +77,7 @@ class PDFDocumentWithTables extends PDFDocument {
     const rowDistance      = 0.5;
       let cellPadding      = {top: 0, right: 0, bottom: 0, left: 0}; // universal
 
-    const prepareHeader    = options.prepareHeader || (() => this.font("Helvetica-Bold").fontSize(8).fillColor('#523092'));
+    const prepareHeader    = options.prepareHeader || (() => this.font("Helvetica-Bold").fontSize(8));
     const prepareRow       = options.prepareRow || ((row, indexColumn, indexRow, rectRow) => this.font("Helvetica").fontSize(8));
     
     const maxY             = this.page.height - (this.page.margins.top + this.page.margins.bottom);
