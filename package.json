@@ -1,6 +1,6 @@
 {
   "name": "pdfkit-table-ztlido",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "PdfKit Table modified for ZTLido. Helps to draw informations in simple tables using pdfkit. #server-side. Generate pdf tables with javascript (PDFKIT plugin) ",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,6 @@
   "homepage": "https://github.com/MarketShareMovers/pdfkit-table-ztlido#readme",
   "dependencies": {
     "pdfkit": "latest"
-  }
+  },
+  "private": true
 }
