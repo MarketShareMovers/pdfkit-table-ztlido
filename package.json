@@ -7,21 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "git-push": "git add . && git commit -m 'update' && git push "
   },
-  "repository": "git+https://github.com/natancabral/pdfkit-table.git",
-  "author": "natancabral",
+  "repository": "git+https://github.com/MarketShareMovers/pdfkit-table-ztlido.git",
+  "author": "mdefeo",
   "keywords": [
     "javascript",
     "pdf",
     "pdfkit",
-    "table",
-    "pdfkit table",
-    "pdfkit-table"
+    "table"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/natancabral/pdfkit-table/issues"
+    "url": "https://github.com/MarketShareMovers/pdfkit-table-ztlido/issues"
   },
-  "homepage": "https://github.com/natancabral/pdfkit-table#readme",
+  "homepage": "https://github.com/MarketShareMovers/pdfkit-table-ztlido#readme",
   "dependencies": {
     "pdfkit": "latest"
   }
