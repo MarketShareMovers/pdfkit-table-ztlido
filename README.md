@@ -1,4 +1,4 @@
-# pdfkit-table
+# pdfkit-table-ztlido
 
 #### Generate pdf tables with javascript (PDFKIT plugin)
 Helps to draw informations in simple tables using pdfkit. #server-side.
