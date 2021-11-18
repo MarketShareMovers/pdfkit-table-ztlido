@@ -596,14 +596,14 @@ class PDFDocumentWithTables extends PDFDocument {
             // ------------------------------------------------------------------------------
             // align vertically
             let topTextToAlignVertically = 0;
-            if(valign && valign !== 'top'){
+            //if(valign && valign !== 'top'){
               const heightText = this.heightOfString(text, {
                 width: width - (cellPadding.left + cellPadding.right),
                 align: align,
               }); 
               // line height, spacing hehight, cell and text diference
               topTextToAlignVertically = rowDistance - columnSpacing + (rectCell.height - heightText) / 2;  
-            }
+            //}
             // ------------------------------------------------------------------------------
     
             this.text(text, 
@@ -666,7 +666,7 @@ class PDFDocumentWithTables extends PDFDocument {
           row.forEach((cell, index) => {
     
             let align = 'left';
-            let valign = undefined;
+            let valign = 'bottom';
     
             const rectCell = {
               // x: columnPositions[index],
@@ -696,14 +696,14 @@ class PDFDocumentWithTables extends PDFDocument {
             // ------------------------------------------------------------------------------
             // align vertically
             let topTextToAlignVertically = 0;
-            if(valign && valign !== 'top'){
+            //if(valign && valign !== 'top'){
               const heightText = this.heightOfString(cell, {
                 width: columnSizes[index] - (cellPadding.left + cellPadding.right),
                 align: align,
               }); 
               // line height, spacing hehight, cell and text diference
               topTextToAlignVertically = rowDistance - columnSpacing + (rectCell.height - heightText) / 2;  
-            }
+            //}
             // ------------------------------------------------------------------------------
     
             this.text(cell, 
