@@ -282,7 +282,7 @@ class PDFDocumentWithTables extends PDFDocument {
         // calc height size of string
         const cellHeight = this.heightOfString(text, {
           width: columnSizes[i] - (cellp.left + cellp.right),
-          align: 'left',
+          align: 'center',
         });
         
         result = Math.max(result, cellHeight);
@@ -398,7 +398,7 @@ class PDFDocumentWithTables extends PDFDocument {
               lastPositionX + (cellPadding.left), 
               startY, {
               width: Number(columnSizes[i]) - (cellPadding.left + cellPadding.right),
-              align: 'left',
+              align: 'center',
             });
             
             lastPositionX += columnSizes[i] >> 0;
@@ -413,7 +413,7 @@ class PDFDocumentWithTables extends PDFDocument {
             let {label, width, renderer, align, headerColor, headerOpacity, padding} = dataHeader;
             // check defination
             width = width || columnSizes[i];
-            align = align || 'left';
+            align = align || 'center';
             // force number
             width = width >> 0;
     
@@ -499,7 +499,7 @@ class PDFDocumentWithTables extends PDFDocument {
         
         // check defination
         width = width || columnWidth;
-        align = align || 'left';
+        align = align || 'center';
 
         // cell padding
         cellPadding = prepareCellPadding(padding || options.padding || 0);
@@ -617,7 +617,7 @@ class PDFDocumentWithTables extends PDFDocument {
 
       row.forEach((cell, index) => {
 
-        let align = 'left';
+        let align = 'center';
 
         const rectCell = {
           // x: columnPositions[index],
