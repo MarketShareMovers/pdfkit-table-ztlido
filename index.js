@@ -25,7 +25,7 @@ class PDFDocumentWithTables extends PDFDocument {
 
     // validate
     fillColor || (fillColor = '#FDB913');
-    fillOpacity || (fillOpacity = 0.1);
+    fillOpacity || (fillOpacity = 1);
 
     // save current style
     this.save();
