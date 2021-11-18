@@ -410,10 +410,11 @@ class PDFDocumentWithTables extends PDFDocument {
           // Print all headers
           table.headers.forEach( (dataHeader, i) => {
 
-            let {label, width, renderer, align, headerColor, headerOpacity, padding} = dataHeader;
+            let {label, width, renderer, align, headerColor, headerOpacity, padding, valign} = dataHeader;
             // check defination
             width = width || columnSizes[i];
             align = align || 'center';
+            valign = valign || 'bottom';
             // force number
             width = width >> 0;
     
@@ -442,6 +443,7 @@ class PDFDocumentWithTables extends PDFDocument {
               startY, {
               width: width - (cellPadding.left + cellPadding.right),
               align: align,
+              valign: valign
             })
 
             lastPositionX += width;
