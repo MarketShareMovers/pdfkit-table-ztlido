@@ -476,7 +476,7 @@ class PDFDocumentWithTables extends PDFDocument {
                   lastPositionX + (cellPadding.left), 
                   startY, {
                   width: width - (cellPadding.left + cellPadding.right),
-                  align: align,
+                  align: 'center',
                 })
     
                 lastPositionX += width;
@@ -610,7 +610,7 @@ class PDFDocumentWithTables extends PDFDocument {
               lastPositionX + (cellPadding.left), 
               startY + topTextToAlignVertically, {
               width: width - (cellPadding.left + cellPadding.right),
-              align: align,
+              align: 'center',
             });
             
             lastPositionX += width; 
@@ -665,7 +665,7 @@ class PDFDocumentWithTables extends PDFDocument {
     
           row.forEach((cell, index) => {
     
-            let align = 'left';
+            let align = 'center';
             let valign = 'center';
     
             const rectCell = {
@@ -710,7 +710,7 @@ class PDFDocumentWithTables extends PDFDocument {
               lastPositionX + (cellPadding.left),
               startY + topTextToAlignVertically, {
               width: columnSizes[index] - (cellPadding.left + cellPadding.right),
-              align: align,
+              align: 'center',
             });
     
             lastPositionX += columnSizes[index];
