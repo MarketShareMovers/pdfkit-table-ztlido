@@ -705,13 +705,15 @@ class PDFDocumentWithTables extends PDFDocument {
               topTextToAlignVertically = rowDistance - columnSpacing + (rectCell.height - heightText) / 2;  
             //}
             // ------------------------------------------------------------------------------
-    
+
+            cell  = (cell == 'X' ? 'X' : cell);
             this.text(cell, 
               lastPositionX + (cellPadding.left),
               startY + topTextToAlignVertically, {
               width: columnSizes[index] - (cellPadding.left + cellPadding.right),
-              align: 'center',
+              align: (index == 0 ? 'left' : 'center'),
             });
+
     
             lastPositionX += columnSizes[index];
     
