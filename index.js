@@ -533,7 +533,7 @@ class PDFDocumentWithTables extends PDFDocument {
             // check defination
             width = width || columnWidth;
             align = align || 'center';
-            valign = valign || 'center';
+            valign = valign || 'bottom';
     
             // cell padding
             cellPadding = prepareCellPadding(padding || options.padding || 0);
@@ -666,7 +666,7 @@ class PDFDocumentWithTables extends PDFDocument {
           row.forEach((cell, index) => {
     
             let align = 'center';
-            let valign = 'center';
+            let valign = 'bottom';
     
             const rectCell = {
               // x: columnPositions[index],
